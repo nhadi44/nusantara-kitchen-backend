@@ -1,0 +1,125 @@
+[
+  {
+    "_id": "b2873b53-afee-45e2-84a8-f4feb6f045fd",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "81a153c0-3c60-4790-b5a0-efa703f0fd5a",
+    "name": "create karyawan",
+    "url": "http://localhost:5000/api/nusantara-kitchen/create-karyawan",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-04-06T09:41:07.107Z",
+    "modified": "2023-04-13T19:36:14.010Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nik\": \"1234567890123456\",\n  \"firstname\":\"hadi\",\n  \"lastname\": \"nurhidayat\",\n  \"phonenumber\": \"1234567890123\",\n  \"email\": \"hadi@mail.com\",\n  \"joindate\": \"2023-04-06\",\n  \"endcontract\": \"2024-04-06\",\n  \"address\": \"bandung\",\n  \"photo\": \"test\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c9a1e3f8-709b-4a49-8663-2fc10a41f2ce",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "81a153c0-3c60-4790-b5a0-efa703f0fd5a",
+    "name": "getKaryawan",
+    "url": "http://localhost:5000/api/nusantara-kitchen/karyawan/get-all-karyawan",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-04-06T09:44:52.195Z",
+    "modified": "2023-04-13T19:51:45.795Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "5da2b076-ebe2-4733-aa6c-264fbb83f9d5",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "81a153c0-3c60-4790-b5a0-efa703f0fd5a",
+    "name": "get karyawan id",
+    "url": "http://localhost:5000/api/nusantara-kitchen/get-karyawan",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-04-06T19:58:20.270Z",
+    "modified": "2023-04-06T21:08:21.233Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": \"clg4yvim60002j2rm40mqsnmo\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2735e7f7-7a1b-4163-8ad1-1a3bfc2ef964",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "81a153c0-3c60-4790-b5a0-efa703f0fd5a",
+    "name": "update karyawan",
+    "url": "http://localhost:5000/api/nusantara-kitchen/update-karyawan",
+    "method": "PUT",
+    "sortNum": 35000,
+    "created": "2023-04-06T20:03:49.098Z",
+    "modified": "2023-04-06T20:08:19.331Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": \"clg4yygnh0008j2kcfgof9dvr\",\n  \"nik\": \"1234567890123456\",\n  \"firstname\":\"hadi\",\n  \"lastname\": \"nurhidayat skom s\",\n  \"phonenumber\": \"1234567890123\",\n  \"email\": \"hadis@mail.com\",\n  \"joindate\": \"2023-04-06\",\n  \"endcontract\": \"2024-04-06\",\n  \"address\": \"bandung\",\n  \"photo\": \"test\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f65dd5d4-2ad2-4f72-aa33-95483b34ffc1",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "81a153c0-3c60-4790-b5a0-efa703f0fd5a",
+    "name": "delete karyawan ",
+    "url": "http://localhost:5000/api/nusantara-kitchen/delete-karyawan",
+    "method": "DELETE",
+    "sortNum": 60000,
+    "created": "2023-04-06T20:10:49.531Z",
+    "modified": "2023-04-06T20:15:52.086Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": \"clg4yygnh0008j2kcfgof9dvr\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "5c453919-d614-42b6-b0cb-2f7373607dfd",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "45e29eef-147a-42be-8aae-e4ae75c60d5d",
+    "name": "get-auth",
+    "url": "http://localhost:5000/api/nusantara-kitchen/auth",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2023-04-13T19:47:23.682Z",
+    "modified": "2023-04-13T19:52:29.909Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "d5fb43e0-2403-4013-8998-0b4c8f200131",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "45e29eef-147a-42be-8aae-e4ae75c60d5d",
+    "name": "register",
+    "url": "http://localhost:5000/api/nusantara-kitchen/auth/register",
+    "method": "POST",
+    "sortNum": 80000,
+    "created": "2023-04-13T20:04:44.411Z",
+    "modified": "2023-04-13T20:17:35.253Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\": \"testing2\",\n  \"password\": \"P@ssw0rd\",\n  \"karyawan_id\": \"clgfiwmip0007j2ds4qa7wjnl\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

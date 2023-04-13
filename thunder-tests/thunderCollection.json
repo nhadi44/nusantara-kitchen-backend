@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "colName": "nusantara kitchen",
+    "created": "2023-04-05T20:41:31.035Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "81a153c0-3c60-4790-b5a0-efa703f0fd5a",
+        "name": "Karyawan",
+        "containerId": "",
+        "created": "2023-04-06T09:41:00.506Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "45e29eef-147a-42be-8aae-e4ae75c60d5d",
+        "name": "Auth",
+        "containerId": "",
+        "created": "2023-04-07T19:02:54.247Z",
+        "sortNum": 20000
+      }
+    ]
+  }
+]

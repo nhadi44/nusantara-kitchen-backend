@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Karyawan {
+  id          String   @id @default(cuid())
+  nik         String   @unique
+  firstName   String
+  lastName    String
+  phoneNumber String
+  email       String   @unique
+  address     String
+  joinDate    String
+  endContract String
+  photo       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  Auth        Auth[]
+}
+
+model Auth {
+  id         String   @id @default(cuid())
+  username   String   @unique
+  password   String
+  karyawanId String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  karyawan   Karyawan @relation(fields: [karyawanId], references: [id])
+
+  @@index([karyawanId], map: "Auth_karyawanId_fkey")
+}
