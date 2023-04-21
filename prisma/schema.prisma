@@ -7,30 +7,31 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Karyawan {
-  id          String   @id @default(cuid())
-  nik         String   @unique
+model karyawan {
+  id          String    @id @default(uuid())
+  nik         String    @unique(map: "Karyawan_nik_key")
   firstName   String
   lastName    String
   phoneNumber String
-  email       String   @unique
+  email       String    @unique(map: "Karyawan_email_key")
   address     String
   joinDate    String
   endContract String
   photo       String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-  Auth        Auth[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime?
+  auth        auth[]
 }
 
-model Auth {
-  id         String   @id @default(cuid())
-  username   String   @unique
-  password   String
-  karyawanId String
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-  karyawan   Karyawan @relation(fields: [karyawanId], references: [id])
+model auth {
+  id            String    @id @default(uuid())
+  username      String    @unique(map: "Auth_username_key")
+  password      String
+  karyawanId    String
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime?
+  rememberToken String?   @db.VarChar(255)
+  karyawan      karyawan  @relation(fields: [karyawanId], references: [id], map: "Auth_karyawanId_fkey")
 
   @@index([karyawanId], map: "Auth_karyawanId_fkey")
 }

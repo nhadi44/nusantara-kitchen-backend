@@ -15,7 +15,7 @@ const karyawanService = {
   createKaryawan: async (data) => {
     const karyawan = await prisma.karyawan.create({
       data: data,
-    });
+    })
   },
 
   getKaryawanById: async (id) => {
