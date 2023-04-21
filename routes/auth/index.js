@@ -38,4 +38,16 @@ authRouter.post(
   }
 );
 
+authRouter.post("/login", (req, res) => {
+  authController.login(req, res);
+});
+
+authRouter.post("/verify", (req, res) => {
+  authController.verifyToken(req, res);
+});
+
+authRouter.post("/logout", (req, res) => {
+  authController.logout(req, res);
+});
+
 export default authRouter;

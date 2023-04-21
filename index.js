@@ -7,6 +7,8 @@ import morgan from "morgan";
 import karyawanRoutes from "./routes/karyawan/index.js";
 import authRoutes from "./routes/auth/index.js";
 
+dotenv.config();
+
 const app = express();
 const port = dotenv.config().parsed.APP_PORT;
 const router = express.Router();

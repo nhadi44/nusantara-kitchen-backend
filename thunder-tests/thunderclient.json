@@ -4,11 +4,11 @@
     "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
     "containerId": "81a153c0-3c60-4790-b5a0-efa703f0fd5a",
     "name": "create karyawan",
-    "url": "http://localhost:5000/api/nusantara-kitchen/create-karyawan",
+    "url": "http://localhost:5000/api/nusantara-kitchen/karyawan/create-karyawan",
     "method": "POST",
     "sortNum": 30000,
     "created": "2023-04-06T09:41:07.107Z",
-    "modified": "2023-04-13T19:36:14.010Z",
+    "modified": "2023-04-20T22:40:37.759Z",
     "headers": [],
     "params": [],
     "body": {
@@ -37,16 +37,16 @@
     "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
     "containerId": "81a153c0-3c60-4790-b5a0-efa703f0fd5a",
     "name": "get karyawan id",
-    "url": "http://localhost:5000/api/nusantara-kitchen/get-karyawan",
+    "url": "http://localhost:5000/api/nusantara-kitchen/karyawan/get-karyawan",
     "method": "GET",
     "sortNum": 50000,
     "created": "2023-04-06T19:58:20.270Z",
-    "modified": "2023-04-06T21:08:21.233Z",
+    "modified": "2023-04-20T22:41:53.803Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"id\": \"clg4yvim60002j2rm40mqsnmo\"\n}",
+      "raw": "{\n  \"id\": \"29ab0572-5517-4466-bb8c-83c7e85572dd\"\n}",
       "form": []
     },
     "tests": []
@@ -112,14 +112,71 @@
     "method": "POST",
     "sortNum": 80000,
     "created": "2023-04-13T20:04:44.411Z",
-    "modified": "2023-04-13T20:17:35.253Z",
+    "modified": "2023-04-20T22:42:10.749Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"username\": \"testing2\",\n  \"password\": \"P@ssw0rd\",\n  \"karyawan_id\": \"clgfiwmip0007j2ds4qa7wjnl\"\n}",
+      "raw": "{\n  \"username\": \"hadi\",\n  \"password\": \"P@ssw0rd\",\n  \"karyawan_id\": \"29ab0572-5517-4466-bb8c-83c7e85572dd\"\n}",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "847fe9f4-4349-4763-8e94-92c0941292cc",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "45e29eef-147a-42be-8aae-e4ae75c60d5d",
+    "name": "login",
+    "url": "http://localhost:5000/api/nusantara-kitchen/auth/login",
+    "method": "POST",
+    "sortNum": 90000,
+    "created": "2023-04-20T22:48:55.750Z",
+    "modified": "2023-04-20T22:50:36.078Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\": \"hadi\",\n  \"password\": \"P@ssw0rd\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "defa0b03-bea9-44b9-85cb-240d7401bd66",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "45e29eef-147a-42be-8aae-e4ae75c60d5d",
+    "name": "verify",
+    "url": "http://localhost:5000/api/nusantara-kitchen/auth/verify",
+    "method": "POST",
+    "sortNum": 100000,
+    "created": "2023-04-21T09:54:57.106Z",
+    "modified": "2023-04-21T10:42:28.499Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmODUwMzY2LWI0Y2UtNDM0YS05NDZiLWZhNzk2NmZlNzMyZCIsImlhdCI6MTY4MjA3MzczNSwiZXhwIjoxNjgyMTYwMTM1fQ.Ux13XNOGLd96idXdVtu7hmxR8zi0mOkg30HTRQwYYKI"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "c7b1851c-c091-42ac-af9a-fdd4273486a5",
+    "colId": "073d5b34-65a2-4a34-a83b-e8751bda0cd6",
+    "containerId": "45e29eef-147a-42be-8aae-e4ae75c60d5d",
+    "name": "logout",
+    "url": "http://localhost:5000/api/nusantara-kitchen/auth/logout",
+    "method": "POST",
+    "sortNum": 110000,
+    "created": "2023-04-21T10:45:30.432Z",
+    "modified": "2023-04-21T10:45:43.847Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmODUwMzY2LWI0Y2UtNDM0YS05NDZiLWZhNzk2NmZlNzMyZCIsImlhdCI6MTY4MjA3MzczNSwiZXhwIjoxNjgyMTYwMTM1fQ.Ux13XNOGLd96idXdVtu7hmxR8zi0mOkg30HTRQwYYKI"
+      }
+    ],
+    "params": [],
     "tests": []
   }
 ]
